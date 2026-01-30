@@ -1,0 +1,23 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Frontend Developer",
+      "companyId": 1,
+      "location": "New York, NY",
+      "jobType": "Remote",
+      "salary": 150000,
+      "experienceLevel": "Senior",
+      "skills": ["React", "TypeScript", "GraphQL"],
+      "postedDate": "2023-10-26T10:00:00Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Tech Solutions Inc.",
+      "size": "1000+",
+      "description": "A leading provider of innovative tech solutions."
+    }
+  ]
+}
