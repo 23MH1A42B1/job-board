@@ -1,41 +1,28 @@
 import useJobStore from "../store/useJobStore";
 
 export default function JobCard({ job }) {
-  const { bookmarkedJobs, toggleBookmark } = useJobStore();
-  const isBookmarked = bookmarkedJobs.includes(job.id);
+  const bookmarked = useJobStore((s) => s.bookmarkedJobs.includes(job.id));
+  const toggleBookmark = useJobStore((s) => s.toggleBookmark);
 
   return (
-    <div
-      data-testid={`job-card-${job.id}`}
-      className="bg-white border rounded-lg p-4 relative"
-    >
+    <div data-testid={`job-card-${job.id}`} className="job-card">
       <button
         data-testid={`bookmark-btn-${job.id}`}
-        data-bookmarked={isBookmarked}
+        data-bookmarked={bookmarked}
         onClick={() => toggleBookmark(job.id)}
-        className="absolute top-4 right-4 text-xl"
       >
-        {isBookmarked ? "★" : "☆"}
+        {bookmarked ? "★" : "☆"}
       </button>
 
-      <h3 className="font-semibold">{job.title}</h3>
-      <p className="text-sm text-gray-500">{job.location}</p>
+      <h3>{job.title}</h3>
+      <p>{job.company}</p>
+      <p>{job.location}</p>
 
-      <p
-        data-testid="job-salary"
-        className="text-sm font-medium mt-2"
-      >
-        ${job.salary.toLocaleString()}
-      </p>
+      <p data-testid="job-salary">${job.salary}</p>
 
-      <div className="flex flex-wrap gap-2 mt-3">
-        {job.skills.map((skill) => (
-          <span
-            key={skill}
-            className="text-xs bg-gray-100 px-2 py-1 rounded"
-          >
-            {skill}
-          </span>
+      <div>
+        {job.skills.map((s) => (
+          <span key={s}>{s}</span>
         ))}
       </div>
     </div>

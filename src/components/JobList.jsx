@@ -1,19 +1,18 @@
-import Layout from "../layout/Layout";
-import useJobs from "../hooks/useJobs";
-import JobsToolbar from "../components/JobsToolbar";
-import JobList from "../components/JobList";
+import useJobStore from "../store/useJobStore";
+import JobCard from "./JobCard";
 
-export default function JobsPage() {
-  const { data } = useJobs();
-
-  if (!data) return <p>Loading...</p>;
+export default function JobList({ jobs }) {
+  const viewMode = useJobStore((s) => s.viewMode);
 
   return (
-    <Layout>
-      <JobsToolbar />
-      <div className="mt-6">
-        <JobList jobs={data.jobs} />
-      </div>
-    </Layout>
+    <div
+      data-testid="job-list-container"
+      data-view-mode={viewMode}
+      className={viewMode === "grid" ? "grid" : "list"}
+    >
+      {jobs.map((job) => (
+        <JobCard key={job.id} job={job} />
+      ))}
+    </div>
   );
 }

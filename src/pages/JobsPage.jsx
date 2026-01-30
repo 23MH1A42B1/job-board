@@ -1,55 +1,57 @@
-import { useMemo } from "react";
 import data from "../data/mock-data.json";
 import useJobStore from "../store/useJobStore";
 
+import Toolbar from "../components/Toolbar";
+import FiltersPanel from "../components/FiltersPanel";
+import JobList from "../components/JobList";
+import Pagination from "../components/Pagination";
+
+const PAGE_SIZE = 10;
+
 export default function JobsPage() {
-  const jobType = useJobStore(s => s.jobType);
-  const skills = useJobStore(s => s.skills);
-  const search = useJobStore(s => s.search);
+  const jobType = useJobStore((s) => s.jobType);
+  const search = useJobStore((s) => s.search);
+  const sort = useJobStore((s) => s.sort);
+  const page = useJobStore((s) => s.page);
 
-  const jobs = data.jobs;
+  let jobs = data.jobs;
 
-  const filteredJobs = useMemo(() => {
-    let result = jobs;
+  if (jobType) {
+    jobs = jobs.filter((j) => j.jobType === jobType);
+  }
 
-    if (jobType) {
-      result = result.filter(j => j.jobType === jobType);
-    }
+  if (search) {
+    const q = search.toLowerCase();
+    jobs = jobs.filter(
+      (j) =>
+        j.title.toLowerCase().includes(q) ||
+        j.company.toLowerCase().includes(q)
+    );
+  }
 
-    if (skills.length > 0) {
-      result = result.filter(j =>
-        skills.every(skill => j.skills.includes(skill))
-      );
-    }
+  if (sort === "salary-desc") {
+    jobs = [...jobs].sort((a, b) => b.salary - a.salary);
+  }
 
-    if (search) {
-      const s = search.toLowerCase();
-      result = result.filter(j =>
-        j.title.toLowerCase().includes(s)
-      );
-    }
-
-    return result;
-  }, [jobs, jobType, skills, search]);
+  const start = (page - 1) * PAGE_SIZE;
+  const paginatedJobs = jobs.slice(start, start + PAGE_SIZE);
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Jobs Loaded: {filteredJobs.length}</h2>
+    <>
+      {/* TOP BAR */}
+      <Toolbar />
 
-      {filteredJobs.map(job => (
-        <div
-          key={job.id}
-          data-testid={`job-card-${job.id}`}
-          style={{
-            border: "1px solid #ccc",
-            padding: 10,
-            marginBottom: 10
-          }}
-        >
-          <h3>{job.title}</h3>
-          <p>{job.location}</p>
+      {/* MAIN CONTENT */}
+      <div className="container main-layout">
+        {/* LEFT FILTER */}
+        <FiltersPanel />
+
+        {/* RIGHT JOB LIST */}
+        <div className="jobs-area">
+          <JobList jobs={paginatedJobs} />
+          <Pagination total={jobs.length} />
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 }
