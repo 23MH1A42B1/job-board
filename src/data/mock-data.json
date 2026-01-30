@@ -1,235 +1,39 @@
 {
+  "companies": [
+    { "id": 1, "name": "Tech Solutions Inc.", "size": "1000+" },
+    { "id": 2, "name": "Innovate Labs", "size": "500+" },
+    { "id": 3, "name": "Startup Hub", "size": "50+" },
+    { "id": 4, "name": "Enterprise Corp", "size": "2000+" }
+  ],
   "jobs": [
-    {
-      "id": 1,
-      "title": "Frontend Developer",
-      "company": "Tech Solutions",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Junior",
-      "salary": 80000,
-      "skills": ["React", "JavaScript", "CSS"],
-      "postedDate": "2024-01-01"
-    },
-    {
-      "id": 2,
-      "title": "Senior Frontend Engineer",
-      "company": "Innovate Labs",
-      "location": "Bangalore",
-      "jobType": "Hybrid",
-      "experienceLevel": "Senior",
-      "salary": 150000,
-      "skills": ["React", "TypeScript"],
-      "postedDate": "2024-01-02"
-    },
-    {
-      "id": 3,
-      "title": "Backend Developer",
-      "company": "DataWorks",
-      "location": "Hyderabad",
-      "jobType": "Onsite",
-      "experienceLevel": "Mid",
-      "salary": 120000,
-      "skills": ["Node", "MongoDB"],
-      "postedDate": "2024-01-03"
-    },
-    {
-      "id": 4,
-      "title": "Full Stack Developer",
-      "company": "CodeBase",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Mid",
-      "salary": 130000,
-      "skills": ["React", "Node"],
-      "postedDate": "2024-01-04"
-    },
-    {
-      "id": 5,
-      "title": "UI Engineer",
-      "company": "DesignPro",
-      "location": "Mumbai",
-      "jobType": "Hybrid",
-      "experienceLevel": "Junior",
-      "salary": 70000,
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "postedDate": "2024-01-05"
-    },
-    {
-      "id": 6,
-      "title": "React Developer",
-      "company": "Webify",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Senior",
-      "salary": 140000,
-      "skills": ["React", "Redux"],
-      "postedDate": "2024-01-06"
-    },
-    {
-      "id": 7,
-      "title": "Software Engineer",
-      "company": "CloudNine",
-      "location": "Chennai",
-      "jobType": "Onsite",
-      "experienceLevel": "Mid",
-      "salary": 110000,
-      "skills": ["Java", "Spring"],
-      "postedDate": "2024-01-07"
-    },
-    {
-      "id": 8,
-      "title": "Web Developer",
-      "company": "Startup Hub",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Junior",
-      "salary": 75000,
-      "skills": ["HTML", "CSS"],
-      "postedDate": "2024-01-08"
-    },
-    {
-      "id": 9,
-      "title": "Frontend Lead",
-      "company": "NextGen Tech",
-      "location": "Pune",
-      "jobType": "Hybrid",
-      "experienceLevel": "Senior",
-      "salary": 160000,
-      "skills": ["React", "Architecture"],
-      "postedDate": "2024-01-09"
-    },
-    {
-      "id": 10,
-      "title": "JavaScript Developer",
-      "company": "JS World",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Mid",
-      "salary": 115000,
-      "skills": ["JavaScript", "ES6"],
-      "postedDate": "2024-01-10"
-    },
-    {
-      "id": 11,
-      "title": "Software Developer",
-      "company": "EnterpriseSoft",
-      "location": "Noida",
-      "jobType": "Onsite",
-      "experienceLevel": "Junior",
-      "salary": 85000,
-      "skills": ["C++", "OOP"],
-      "postedDate": "2024-01-11"
-    },
-    {
-      "id": 12,
-      "title": "Frontend Developer",
-      "company": "UX Studio",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Mid",
-      "salary": 125000,
-      "skills": ["React", "UI"],
-      "postedDate": "2024-01-12"
-    },
-    {
-      "id": 13,
-      "title": "Application Engineer",
-      "company": "AppWorks",
-      "location": "Kolkata",
-      "jobType": "Hybrid",
-      "experienceLevel": "Mid",
-      "salary": 105000,
-      "skills": ["Python", "Django"],
-      "postedDate": "2024-01-13"
-    },
-    {
-      "id": 14,
-      "title": "Junior Web Developer",
-      "company": "WebStart",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Junior",
-      "salary": 65000,
-      "skills": ["HTML", "CSS"],
-      "postedDate": "2024-01-14"
-    },
-    {
-      "id": 15,
-      "title": "Senior Software Engineer",
-      "company": "ScaleTech",
-      "location": "Bangalore",
-      "jobType": "Hybrid",
-      "experienceLevel": "Senior",
-      "salary": 170000,
-      "skills": ["System Design", "Java"],
-      "postedDate": "2024-01-15"
-    },
-    {
-      "id": 16,
-      "title": "Frontend Architect",
-      "company": "Visionary",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Senior",
-      "salary": 180000,
-      "skills": ["React", "Performance"],
-      "postedDate": "2024-01-16"
-    },
-    {
-      "id": 17,
-      "title": "Product Engineer",
-      "company": "BuildIt",
-      "location": "Hyderabad",
-      "jobType": "Onsite",
-      "experienceLevel": "Mid",
-      "salary": 110000,
-      "skills": ["JavaScript", "APIs"],
-      "postedDate": "2024-01-17"
-    },
-    {
-      "id": 18,
-      "title": "Frontend Intern",
-      "company": "LearnTech",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Internship",
-      "salary": 40000,
-      "skills": ["HTML", "CSS"],
-      "postedDate": "2024-01-18"
-    },
-    {
-      "id": 19,
-      "title": "UI Developer",
-      "company": "CreativeSoft",
-      "location": "Mumbai",
-      "jobType": "Hybrid",
-      "experienceLevel": "Mid",
-      "salary": 95000,
-      "skills": ["UI", "CSS"],
-      "postedDate": "2024-01-19"
-    },
-    {
-      "id": 20,
-      "title": "Frontend Engineer",
-      "company": "GlobalTech",
-      "location": "Remote",
-      "jobType": "Remote",
-      "experienceLevel": "Senior",
-      "salary": 155000,
-      "skills": ["React", "Testing"],
-      "postedDate": "2024-01-20"
-    },
-    {
-      "id": 21,
-      "title": "Web Application Developer",
-      "company": "WebApps Inc",
-      "location": "Delhi",
-      "jobType": "Onsite",
-      "experienceLevel": "Mid",
-      "salary": 100000,
-      "skills": ["JavaScript", "Frontend"],
-      "postedDate": "2024-01-21"
-    }
+    { "id": 1, "title": "Frontend Developer", "companyId": 1, "location": "Remote", "jobType": "Remote", "experienceLevel": "Junior", "salary": 60000, "skills": ["React", "CSS"], "postedDate": "2024-01-01" },
+    { "id": 2, "title": "Senior Frontend Developer", "companyId": 2, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Senior", "salary": 120000, "skills": ["React", "TypeScript"], "postedDate": "2024-01-02" },
+    { "id": 3, "title": "UI Engineer", "companyId": 3, "location": "Remote", "jobType": "Remote", "experienceLevel": "Mid", "salary": 80000, "skills": ["HTML", "CSS"], "postedDate": "2024-01-03" },
+    { "id": 4, "title": "React Developer", "companyId": 4, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Mid", "salary": 90000, "skills": ["React", "JavaScript"], "postedDate": "2024-01-04" },
+    { "id": 5, "title": "Frontend Engineer", "companyId": 1, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Mid", "salary": 95000, "skills": ["React", "Redux"], "postedDate": "2024-01-05" },
+
+    { "id": 6, "title": "Web Developer", "companyId": 2, "location": "Remote", "jobType": "Remote", "experienceLevel": "Junior", "salary": 65000, "skills": ["HTML", "CSS", "JS"], "postedDate": "2024-01-06" },
+    { "id": 7, "title": "Software Engineer", "companyId": 3, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Mid", "salary": 85000, "skills": ["JavaScript"], "postedDate": "2024-01-07" },
+    { "id": 8, "title": "Frontend Lead", "companyId": 4, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Senior", "salary": 140000, "skills": ["React", "Architecture"], "postedDate": "2024-01-08" },
+    { "id": 9, "title": "UI Developer", "companyId": 1, "location": "Remote", "jobType": "Remote", "experienceLevel": "Junior", "salary": 70000, "skills": ["CSS", "UI"], "postedDate": "2024-01-09" },
+    { "id": 10, "title": "Frontend Architect", "companyId": 2, "location": "Remote", "jobType": "Remote", "experienceLevel": "Senior", "salary": 160000, "skills": ["React", "Performance"], "postedDate": "2024-01-10" },
+
+    { "id": 11, "title": "Web UI Engineer", "companyId": 3, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Mid", "salary": 88000, "skills": ["CSS", "JS"], "postedDate": "2024-01-11" },
+    { "id": 12, "title": "React Intern", "companyId": 4, "location": "Remote", "jobType": "Remote", "experienceLevel": "Internship", "salary": 30000, "skills": ["React"], "postedDate": "2024-01-12" },
+    { "id": 13, "title": "Frontend Specialist", "companyId": 1, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Mid", "salary": 92000, "skills": ["React", "UI"], "postedDate": "2024-01-13" },
+    { "id": 14, "title": "UI Designer", "companyId": 2, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Junior", "salary": 60000, "skills": ["CSS"], "postedDate": "2024-01-14" },
+    { "id": 15, "title": "Frontend Manager", "companyId": 3, "location": "Remote", "jobType": "Remote", "experienceLevel": "Senior", "salary": 150000, "skills": ["React", "Leadership"], "postedDate": "2024-01-15" },
+
+    { "id": 16, "title": "Web Engineer", "companyId": 4, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Mid", "salary": 87000, "skills": ["HTML", "JS"], "postedDate": "2024-01-16" },
+    { "id": 17, "title": "Frontend Tester", "companyId": 1, "location": "Remote", "jobType": "Remote", "experienceLevel": "Junior", "salary": 55000, "skills": ["Testing"], "postedDate": "2024-01-17" },
+    { "id": 18, "title": "UI Architect", "companyId": 2, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Senior", "salary": 135000, "skills": ["UI", "UX"], "postedDate": "2024-01-18" },
+    { "id": 19, "title": "React Consultant", "companyId": 3, "location": "Remote", "jobType": "Remote", "experienceLevel": "Senior", "salary": 145000, "skills": ["React"], "postedDate": "2024-01-19" },
+    { "id": 20, "title": "Frontend Analyst", "companyId": 4, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Mid", "salary": 90000, "skills": ["JavaScript"], "postedDate": "2024-01-20" },
+
+    { "id": 21, "title": "Web UI Intern", "companyId": 1, "location": "Remote", "jobType": "Remote", "experienceLevel": "Internship", "salary": 25000, "skills": ["HTML"], "postedDate": "2024-01-21" },
+    { "id": 22, "title": "Frontend QA", "companyId": 2, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Junior", "salary": 65000, "skills": ["Testing"], "postedDate": "2024-01-22" },
+    { "id": 23, "title": "Senior UI Engineer", "companyId": 3, "location": "Remote", "jobType": "Remote", "experienceLevel": "Senior", "salary": 155000, "skills": ["UI", "React"], "postedDate": "2024-01-23" },
+    { "id": 24, "title": "Frontend Product Engineer", "companyId": 4, "location": "Hybrid", "jobType": "Hybrid", "experienceLevel": "Mid", "salary": 98000, "skills": ["React"], "postedDate": "2024-01-24" },
+    { "id": 25, "title": "UI Systems Engineer", "companyId": 1, "location": "Onsite", "jobType": "Onsite", "experienceLevel": "Senior", "salary": 130000, "skills": ["UI"], "postedDate": "2024-01-25" }
   ]
 }

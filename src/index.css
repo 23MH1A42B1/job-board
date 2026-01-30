@@ -385,3 +385,73 @@ h2 {
 .jobs-area {
   flex: 1;
 }
+
+/* =========================
+   SALARY SLIDER
+========================= */
+.salary-slider {
+  margin-top: 8px;
+  height: 6px;
+  background: #ddd6fe;
+  border-radius: 999px;
+}
+
+.salary-track {
+  background: #7c3aed;
+  height: 6px;
+  border-radius: 999px;
+}
+
+.salary-thumb {
+  height: 18px;
+  width: 18px;
+  background: white;
+  border: 2px solid #7c3aed;
+  border-radius: 50%;
+  cursor: grab;
+  top: -6px;
+}
+
+/* =========================
+   SINGLE-LINE SALARY RANGE
+========================= */
+.salary-range {
+  position: relative;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.salary-range input[type="range"] {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.salary-range input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7c3aed;
+  cursor: pointer;
+  -webkit-appearance: none;
+  z-index: 2;
+}
+
+.salary-range input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #ddd6fe;
+  border-radius: 999px;
+}
+
+.salary-values {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #4c1d95;
+  font-weight: 600;
+}
